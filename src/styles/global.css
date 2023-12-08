@@ -13,9 +13,10 @@ html, body {
 body {
   background: radial-gradient(at top left, #43573a 0%, #36472e 100%);
   background-repeat: no-repeat;
+  padding-left: 8px;
 }
 p {
-  margin: 16px auto;
+  /* margin: 16px auto; */
   line-height: 1.5em;
   color: #edad09
 }
@@ -31,12 +32,19 @@ nav {
   margin: 40px auto;
 }
 nav .links {
-  display: inline-block;
-  text-align: right;
+  display: inline-block; 
+  text-align: left;
+  white-space: nowrap;
+}
+nav .logo {
+    /* display: inline-block;  */
+  position: relative;
+  white-space: nowrap;
+  padding-left: 8px;
 }
 nav a {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 10px;
   font-weight: 400;
   padding-bottom: 8px;
   border-bottom: 3px solid transparent;
