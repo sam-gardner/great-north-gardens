@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: "Montserrat";
+  font-family: "Teko";
+  font-size: 1.14em;
   color: white;
 }
 html, body {
@@ -17,8 +18,9 @@ body {
 }
 p {
   /* margin: 16px auto; */
-  line-height: 1.5em;
-  color: #edad09
+  /* line-height: 1.5em; */
+  /* color: #edad09 */
+  font-size: 0.55em;
 }
 
 /* layout & nav */
@@ -28,10 +30,11 @@ p {
 }
 nav {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 40px auto;
+  /* grid-template-columns: 1fr 1fr; */
+  margin: 20px auto;
 }
 nav .links {
+  font-size: 0.6em;
   display: inline-block; 
   text-align: left;
   white-space: nowrap;
@@ -40,7 +43,7 @@ nav .logo {
     /* display: inline-block;  */
   position: relative;
   white-space: nowrap;
-  padding-left: 8px;
+  /* padding-left: 8px; */
 }
 nav a {
   display: inline-block;
@@ -58,4 +61,13 @@ footer p{
   text-align: center;
   color: #bbb;
   margin: 40px auto;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    text-align: center;
+  }
+  nav {
+    text-align: center;
+  }
 }

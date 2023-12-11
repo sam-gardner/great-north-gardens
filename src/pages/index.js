@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className="layout">
       <Header />
-      <h1>Welcome to Great North Gardens</h1>
-      <h2>Website coming soon</h2>
+      <h1>Gardening services in the North East</h1>
+      <p>Website coming soon</p>
     </div>
   );
 }
