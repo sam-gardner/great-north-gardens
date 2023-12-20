@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import '../styles/global.css';
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <h1>Gardening services in the North East</h1>
       <p>Website coming soon</p>
+      <Footer />
     </div>
   );
 }

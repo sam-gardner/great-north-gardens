@@ -11,16 +11,19 @@
 html, body {
   min-height: 100%;
 }
+h3 {
+  font-size: 0.8em;
+  padding: 0; 
+  margin: 0;
+}
 body {
   background: radial-gradient(at top left, #43573a 0%, #36472e 100%);
   background-repeat: no-repeat;
   padding-left: 8px;
 }
 p {
-  /* margin: 16px auto; */
-  /* line-height: 1.5em; */
-  /* color: #edad09 */
   font-size: 0.55em;
+  color: #bbb;
 }
 
 /* layout & nav */
@@ -30,7 +33,6 @@ p {
 }
 nav {
   display: grid;
-  /* grid-template-columns: 1fr 1fr; */
   margin: 20px auto;
 }
 nav .links {
@@ -40,10 +42,8 @@ nav .links {
   white-space: nowrap;
 }
 nav .logo {
-    /* display: inline-block;  */
   position: relative;
   white-space: nowrap;
-  /* padding-left: 8px; */
 }
 nav a {
   display: inline-block;
@@ -57,10 +57,28 @@ nav a:hover {
   border-color: white;
   color: #edad09;
 }
-footer p{
-  text-align: center;
+
+.footer {
+  margin-top: 1em;
+}
+
+.footer p {
   color: #bbb;
-  margin: 40px auto;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+
+.footer a {
+  color: #bbb;
+  margin-top: 0rem;
+  padding-top: 0rem;
+  font-size: 0.55em;
+}
+
+.footer .test {
+  display: inline-block;
+  overflow: hidden;
+  height: 32px;
 }
 
 @media only screen and (max-width: 600px) {
