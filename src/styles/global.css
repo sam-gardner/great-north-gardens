@@ -16,9 +16,13 @@ h3 {
   padding: 0; 
   margin: 0;
 }
+h4 {
+  font-size: 0.6em;
+  padding: 0; 
+  margin: 0;
+}
 body {
-  background: radial-gradient(at top left, #43573a 0%, #36472e 100%);
-  background-repeat: no-repeat;
+  background: #43573a;
   padding-left: 8px;
 }
 p {
@@ -81,11 +85,50 @@ nav a:hover {
   height: 32px;
 }
 
-@media only screen and (max-width: 600px) {
+.hamburger {
+  display: none;
+  float: right;
+}
+
+.hamburgerMenu {
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  font-size: 1.8rem;
+  top: 10%;
+  position: fixed;
+  background-color: #43573a;
+  margin-top: 30px; 
+}
+
+.hamburgerMenu ul {
+  width: 150px;
+  display: inline-block;
+}
+
+
+@media (max-width: 600px) {
   * {
     text-align: center;
   }
   nav {
-    text-align: center;
+    text-align: left;
+  }
+  nav .logo {
+    text-align: left;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    float: left;
+    font-size: 1.3rem;
+  }
+  nav .hamburger {
+    display: block;
+    text-align: right;
+  }
+  nav .links {
+    display: none;
   }
 }
